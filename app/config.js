@@ -3,6 +3,9 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
+// We export an obeject w neccessary config
+// Other modules can then use this object at needed
+// only this module directly accesses the environment variables
 export default {
   db: {
     user: process.env.DB_USER,
